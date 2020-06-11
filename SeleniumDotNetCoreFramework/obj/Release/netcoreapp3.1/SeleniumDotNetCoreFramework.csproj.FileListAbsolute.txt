@@ -1,0 +1,16 @@
+C:\SeleniumDotNetCoreFramework\SeleniumDotNetCoreFramework\bin\Release\netcoreapp3.1\NUnit3.TestAdapter.dll
+C:\SeleniumDotNetCoreFramework\SeleniumDotNetCoreFramework\bin\Release\netcoreapp3.1\NUnit3.TestAdapter.pdb
+C:\SeleniumDotNetCoreFramework\SeleniumDotNetCoreFramework\bin\Release\netcoreapp3.1\nunit.engine.dll
+C:\SeleniumDotNetCoreFramework\SeleniumDotNetCoreFramework\bin\Release\netcoreapp3.1\nunit.engine.api.dll
+C:\SeleniumDotNetCoreFramework\SeleniumDotNetCoreFramework\bin\Release\netcoreapp3.1\SeleniumDotNetCoreFramework.deps.json
+C:\SeleniumDotNetCoreFramework\SeleniumDotNetCoreFramework\bin\Release\netcoreapp3.1\SeleniumDotNetCoreFramework.dll
+C:\SeleniumDotNetCoreFramework\SeleniumDotNetCoreFramework\bin\Release\netcoreapp3.1\SeleniumDotNetCoreFramework.pdb
+C:\SeleniumDotNetCoreFramework\SeleniumDotNetCoreFramework\bin\Release\netcoreapp3.1\Interop.Microsoft.Office.Interop.Outlook.dll
+C:\SeleniumDotNetCoreFramework\SeleniumDotNetCoreFramework\obj\Release\netcoreapp3.1\Interop.Microsoft.Office.Interop.Outlook.dll
+C:\SeleniumDotNetCoreFramework\SeleniumDotNetCoreFramework\obj\Release\netcoreapp3.1\SeleniumDotNetCoreFramework.csproj.ResolveComReference.cache
+C:\SeleniumDotNetCoreFramework\SeleniumDotNetCoreFramework\obj\Release\netcoreapp3.1\SeleniumDotNetCoreFramework.csproj.CoreCompileInputs.cache
+C:\SeleniumDotNetCoreFramework\SeleniumDotNetCoreFramework\obj\Release\netcoreapp3.1\SeleniumDotNetCoreFramework.AssemblyInfoInputs.cache
+C:\SeleniumDotNetCoreFramework\SeleniumDotNetCoreFramework\obj\Release\netcoreapp3.1\SeleniumDotNetCoreFramework.AssemblyInfo.cs
+C:\SeleniumDotNetCoreFramework\SeleniumDotNetCoreFramework\obj\Release\netcoreapp3.1\SeleniumDotNetCoreFramework.dll
+C:\SeleniumDotNetCoreFramework\SeleniumDotNetCoreFramework\obj\Release\netcoreapp3.1\SeleniumDotNetCoreFramework.pdb
+C:\SeleniumDotNetCoreFramework\SeleniumDotNetCoreFramework\obj\Release\netcoreapp3.1\SeleniumDotNetCoreFramework.csprojAssemblyReference.cache

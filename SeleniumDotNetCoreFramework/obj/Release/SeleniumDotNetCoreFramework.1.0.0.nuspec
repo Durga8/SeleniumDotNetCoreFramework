@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SeleniumDotNetCoreFramework</id>
+    <version>1.0.0</version>
+    <authors>SeleniumDotNetCoreFramework</authors>
+    <owners>SeleniumDotNetCoreFramework</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="Dapper" version="2.0.35" exclude="Build,Analyzers" />
+        <dependency id="DotNetZip" version="1.13.7" exclude="Build,Analyzers" />
+        <dependency id="ExtentReports.Core" version="1.0.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Razor" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Data.Sqlite.Core" version="3.1.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration" version="3.1.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Binder" version="3.1.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.FileExtensions" version="3.1.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Json" version="3.1.3" exclude="Build,Analyzers" />
+        <dependency id="NUnit" version="3.12.0" exclude="Build,Analyzers" />
+        <dependency id="NUnit.Console" version="3.11.1" exclude="Build,Analyzers" />
+        <dependency id="NUnit.ConsoleRunner" version="3.11.1" exclude="Build,Analyzers" />
+        <dependency id="Oracle.ManagedDataAccess.Core" version="2.19.60" exclude="Build,Analyzers" />
+        <dependency id="Selenium.Support" version="3.141.0" exclude="Build,Analyzers" />
+        <dependency id="Selenium.WebDriver" version="3.141.0" exclude="Build,Analyzers" />
+        <dependency id="Selenium.WebDriver.ChromeDriver" version="81.0.4044.6900" exclude="Build,Analyzers" />
+        <dependency id="Selenium.WebDriver.IEDriver" version="3.150.1" exclude="Build,Analyzers" />
+        <dependency id="System.Data.SqlClient" version="4.8.1" exclude="Build,Analyzers" />
+        <dependency id="System.Drawing.Common" version="4.7.0" exclude="Build,Analyzers" />
+        <dependency id="extent.netcore" version="1.8.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework=".NETCoreApp3.1">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+    <contentFiles>
+      <files include="any/netcoreapp3.1/NUnit3.TestAdapter.dll" buildAction="Content" />
+      <files include="any/netcoreapp3.1/NUnit3.TestAdapter.pdb" buildAction="Content" />
+      <files include="any/netcoreapp3.1/nunit.engine.dll" buildAction="Content" />
+      <files include="any/netcoreapp3.1/nunit.engine.api.dll" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\SeleniumDotNetCoreFramework\SeleniumDotNetCoreFramework\bin\Release\netcoreapp3.1\SeleniumDotNetCoreFramework.dll" target="lib\netcoreapp3.1\SeleniumDotNetCoreFramework.dll" />
+    <file src="C:\Users\C50948\.nuget\packages\nunit3testadapter\3.16.1\build\netcoreapp2.1\NUnit3.TestAdapter.dll" target="content\NUnit3.TestAdapter.dll" />
+    <file src="C:\Users\C50948\.nuget\packages\nunit3testadapter\3.16.1\build\netcoreapp2.1\NUnit3.TestAdapter.dll" target="contentFiles\any\netcoreapp3.1\NUnit3.TestAdapter.dll" />
+    <file src="C:\Users\C50948\.nuget\packages\nunit3testadapter\3.16.1\build\netcoreapp2.1\NUnit3.TestAdapter.pdb" target="content\NUnit3.TestAdapter.pdb" />
+    <file src="C:\Users\C50948\.nuget\packages\nunit3testadapter\3.16.1\build\netcoreapp2.1\NUnit3.TestAdapter.pdb" target="contentFiles\any\netcoreapp3.1\NUnit3.TestAdapter.pdb" />
+    <file src="C:\Users\C50948\.nuget\packages\nunit3testadapter\3.16.1\build\netcoreapp2.1\nunit.engine.dll" target="content\nunit.engine.dll" />
+    <file src="C:\Users\C50948\.nuget\packages\nunit3testadapter\3.16.1\build\netcoreapp2.1\nunit.engine.dll" target="contentFiles\any\netcoreapp3.1\nunit.engine.dll" />
+    <file src="C:\Users\C50948\.nuget\packages\nunit3testadapter\3.16.1\build\netcoreapp2.1\nunit.engine.api.dll" target="content\nunit.engine.api.dll" />
+    <file src="C:\Users\C50948\.nuget\packages\nunit3testadapter\3.16.1\build\netcoreapp2.1\nunit.engine.api.dll" target="contentFiles\any\netcoreapp3.1\nunit.engine.api.dll" />
+  </files>
+</package>

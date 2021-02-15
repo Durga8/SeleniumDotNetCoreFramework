@@ -34,6 +34,7 @@ namespace SeleniumDotNetCoreFramework.Base
         public static ExtentTest test;
         public static string reportPath;
         public static int itr;
+        public static IWebDriver incogdriver;
 
         //Global wait
         public int waitLow = 5;
@@ -43,6 +44,53 @@ namespace SeleniumDotNetCoreFramework.Base
         public int sleepMedium = 5000;
         public int sleepHigh = 12000;
 
+        public static void NewIncogintoBrowserSetup()
+        {
+            string browserType = ExcelHelpers.getParameter("Browser");
+            ChromeOptions options = new ChromeOptions();
+            switch (browserType)
+            {
+                case "Chrome":
+
+                    options.AddArguments("--disable-notifications");
+                    options.AddArguments("--incognito");
+                    incogdriver = new ChromeDriver(options);
+                    break;
+
+                case "Headless-Browser":
+                    options.AddArguments("--disable-notifications");
+                    options.AddArguments("--incognito");
+                    options.AddArguments("--headless");
+                    incogdriver = new ChromeDriver(options);
+                    break;
+
+                default:
+                    Logger.log("Failed to Navigate through the Incognito Driver");
+                    break;
+            }
+            
+        }
+
+        public void KillOpenChromeDrivers()
+        {
+            Process[] killChrome = Process.GetProcessesByName("chromedriver.exe");
+
+            foreach (var process in killChrome)
+            {
+                process.Kill(true);
+
+            }
+        }
+
+        public void KillOpenIEDrivers()
+        {
+            Process[] killInternetExplorer = Process.GetProcessesByName("iexplore.exe");
+
+            foreach (var process in killInternetExplorer)
+            {
+                process.Kill(true);
+            }
+        }
         public static int getIteration()
         {
             /* openExcelRunConfig("RunConfigurationManager", "TestScripts");
@@ -407,6 +455,28 @@ namespace SeleniumDotNetCoreFramework.Base
             return col;
 
 
+        }
+
+
+        public static void JClear(IWebDriver driver, By by)
+        {
+            IWebElement element = driver.FindElement(by);
+            IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
+            js.ExecuteScript("arguments[0].value = '';", element);
+        }
+
+
+        public static string getAttributeValues(IWebDriver driver, By by, string attributename)
+        {
+            IWebElement element = driver.FindElement(by);
+            string txtdata = element.GetAttribute(attributename);
+            return txtdata;
+        }
+        public static void jClick(IWebDriver driver, By by)
+        {
+            IWebElement element = driver.FindElement(by);
+            IJavaScriptExecutor executor = (IJavaScriptExecutor)driver;
+            executor.ExecuteScript("arguments[0].click()", element);
         }
     }
 }

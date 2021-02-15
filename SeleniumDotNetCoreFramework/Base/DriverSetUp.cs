@@ -12,6 +12,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using static SeleniumDotNetCoreFramework.Base.Browser;
 
 namespace SeleniumDotNetCoreFramework.Base
 {
@@ -88,6 +89,35 @@ namespace SeleniumDotNetCoreFramework.Base
 
 
         }
+        public IWebDriver OpenBrowser(BrowserType browserType)
+        {
+            ChromeOptions options = new ChromeOptions();
+            options.AddArguments("--disable-notifications");
+            //Headless ChromeBrowser
+            //options.AddArgument("--headless");
+            InternetExplorerOptions caps = new InternetExplorerOptions();
+            caps.IgnoreZoomLevel = true;
+            caps.EnableNativeEvents = false;
+            caps.InitialBrowserUrl = "http://localhost";
+            caps.UnhandledPromptBehavior = UnhandledPromptBehavior.Accept;
+            caps.IntroduceInstabilityByIgnoringProtectedModeSettings = true;
+            caps.EnablePersistentHover = true;
+            switch (browserType)
+            {
+                case BrowserType.InternetExplorer:
+                    driver = new InternetExplorerDriver(caps);
+                    break;
+                case BrowserType.Chrome:
+                    driver = new ChromeDriver(options);
+                    options.AddArguments("--disable-backgrounding-occluded-windows");
+                    break;
+                default:
+                    driver = new ChromeDriver(options);
+                    options.AddArguments("--disable-backgrounding-occluded-windows");
+                    break;
+            }
+            return driver;
 
+        }
     }
 }

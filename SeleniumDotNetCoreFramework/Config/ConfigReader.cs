@@ -24,9 +24,9 @@ namespace SeleniumDotNetCoreFramework.Config
 
             Settings.AUT = configurationRoot.GetSection("testSettings").Get<TestSettings>().AUT;
             Settings.TestType = configurationRoot.GetSection("testSettings").Get<TestSettings>().TestType;
-            Settings.IsLog = configurationRoot.GetSection("testSettings").Get<TestSettings>().IsLog;
             Settings.AppConnectionString = configurationRoot.GetSection("testSettings").Get<TestSettings>().AUTConnectionString;
             Settings.BrowserType = configurationRoot.GetSection("testSettings").Get<TestSettings>().Browser;
+            Settings.BuildName = configurationRoot.GetSection("testSettings").Get<TestSettings>().Name;
 
         }
     }

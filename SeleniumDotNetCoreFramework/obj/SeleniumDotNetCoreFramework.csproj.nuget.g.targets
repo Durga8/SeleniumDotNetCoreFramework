@@ -4,8 +4,9 @@
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)selenium.webdriver.iedriver\3.150.1\build\Selenium.WebDriver.IEDriver.targets" Condition="Exists('$(NuGetPackageRoot)selenium.webdriver.iedriver\3.150.1\build\Selenium.WebDriver.IEDriver.targets')" />
-    <Import Project="$(NuGetPackageRoot)selenium.webdriver.chromedriver\81.0.4044.13800\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('$(NuGetPackageRoot)selenium.webdriver.chromedriver\81.0.4044.13800\build\Selenium.WebDriver.ChromeDriver.targets')" />
+    <Import Project="$(NuGetPackageRoot)entityframework\6.3.0\buildTransitive\EntityFramework.targets" Condition="Exists('$(NuGetPackageRoot)entityframework\6.3.0\buildTransitive\EntityFramework.targets')" />
+    <Import Project="$(NuGetPackageRoot)selenium.webdriver.iedriver\3.150.1.2\build\Selenium.WebDriver.IEDriver.targets" Condition="Exists('$(NuGetPackageRoot)selenium.webdriver.iedriver\3.150.1.2\build\Selenium.WebDriver.IEDriver.targets')" />
+    <Import Project="$(NuGetPackageRoot)selenium.webdriver.chromedriver\87.0.4280.8800\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('$(NuGetPackageRoot)selenium.webdriver.chromedriver\87.0.4280.8800\build\Selenium.WebDriver.ChromeDriver.targets')" />
     <Import Project="C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\NETStandard.Library.targets')" />
   </ImportGroup>
 </Project>

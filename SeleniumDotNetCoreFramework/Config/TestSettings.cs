@@ -12,11 +12,13 @@ namespace SeleniumDotNetCoreFramework.Config
 
 
         [JsonProperty("name")]
-        public string name { get; set; }
+        public string Name { get; set; }
 
         [JsonProperty("aut")]
         public string AUT { get; set; }
 
+        [JsonProperty("env")]
+        public string Environment { get; set; }
 
         [JsonProperty("browser")]
         public BrowserType Browser { get; set; }
